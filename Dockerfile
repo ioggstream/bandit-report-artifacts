@@ -1,6 +1,6 @@
-FROM python:3.11-slim-buster
+FROM python:3.11-slim-bookworm
 
-RUN apt-get update
+RUN apt-get update && apt-get upgrade -y
 
 ADD entrypoint.sh /
 ADD requirements.txt /
