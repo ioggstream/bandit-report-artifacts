@@ -23,7 +23,7 @@ def test_annotations():
 
 
 def test_run_bandit():
-    results = run_bandit(["tests/canary.py"])
+    results = run_bandit(["canary.py"])
     assert "results" in results
 
 
